@@ -407,13 +407,13 @@ body {
     .card {
       height: auto;
       background-color: white;
-      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-      overflow: hidden; }
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
       .card-side {
         height: auto;
         position: relative;
         box-shadow: none;
-        border-radius: 5px; }
+        border-radius: 5px;
+        overflow: hidden; }
         .card-side-back {
           border-top-right-radius: 0;
           transform: rotateY(0);
@@ -443,7 +443,7 @@ body {
 .story {
   width: 75%;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 6rem 6rem 6rem 8rem;
+  padding: 6rem 6rem 10rem 8rem;
   margin: 0 auto;
   border-radius: 3px;
   font-size: 1.6rem;
@@ -452,9 +452,7 @@ body {
   @media (max-width: 56.25em) {
     .story {
       width: 100%;
-      padding: 4rem 6rem; } }
-  @media (max-width: 56.25em) {
-    .story {
+      padding: 4rem 6rem;
       transform: skewX(0); } }
   .story-shape {
     width: 15rem;
@@ -511,8 +509,7 @@ body {
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("../img/nat-10.jpg");
-  background-size: cover;
-  color: #777; }
+  background-size: cover; }
   @media (max-width: 56.25em) {
     .book {
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url("../img/nat-10.jpg"); } }
@@ -571,7 +568,8 @@ body {
       margin-bottom: 3rem; } }
 
 .form-radio-label {
-  font-size: 1.4rem;
+  color: #777;
+  font-size: 1.8rem;
   cursor: pointer;
   padding-left: 5rem;
   position: relative; }
@@ -691,7 +689,7 @@ body {
   background-color: #f7f7f7; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 15rem 0 52rem; } }
+      padding: 18rem 0 52rem; } }
 
 .section-feature {
   padding: 20rem 0;
@@ -714,12 +712,15 @@ body {
   background-color: #f7f7f7; }
 
 .section-stories {
-  padding: 10rem 0 3rem;
+  padding: 10rem 0 1px;
   position: relative; }
 
 .section-booking {
   padding: 15rem 0;
   background-image: linear-gradient(to bottom right, #7ed56f, #28b485); }
+  @media (max-width: 37.5em) {
+    .section-booking {
+      padding: 10rem 0; } }
 
 .footer {
   background-color: #333;
