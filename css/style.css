@@ -280,6 +280,9 @@ html {
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
+  @media (max-width: 21.875em) {
+    html {
+      font-size: 35%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -413,13 +416,14 @@ body {
       height: auto;
       background-color: white;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-      border-radius: 5px; }
+      overflow: hidden; }
       .card-side {
         height: auto;
         position: relative;
         box-shadow: none;
-        border-radius: none; }
+        border-radius: 5px; }
         .card-side-back {
+          border-top-right-radius: 0;
           transform: rotateY(0);
           -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
@@ -479,13 +483,8 @@ body {
         transform: translateX(1.5rem) skewX(0); } }
   .story-image {
     transition: all 0.5s;
-    backface-visibility: hidden; }
-    .story-image-1 {
-      transform: translateX(-4rem) scale(1.2);
-      height: 100%; }
-    .story-image-2 {
-      transform: scale(1.2);
-      width: 100%; }
+    transform: translateX(-4rem) scale(1.5);
+    height: 100%; }
   .story-caption {
     position: absolute;
     top: 50%;
@@ -501,11 +500,8 @@ body {
   .story:hover .story-caption {
     transform: translate(-50%, -50%);
     opacity: 1; }
-  .story:hover .story-image-1 {
-    transform: translateX(-5rem) scale(1);
-    filter: blur(3px) brightness(85%); }
-  .story:hover .story-image-2 {
-    transform: scale(1);
+  .story:hover .story-image {
+    transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(85%); }
 
 .bg-video {
@@ -523,7 +519,8 @@ body {
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("../img/nat-10.jpg");
-  background-size: cover; }
+  background-size: cover;
+  color: #777; }
   @media (max-width: 56.25em) {
     .book {
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url("../img/nat-10.jpg"); } }
@@ -777,6 +774,9 @@ body {
   @media (max-width: 56.25em) {
     .row {
       max-width: 45rem; } }
+  @media (max-width: 37.5em) {
+    .row {
+      padding: 0 2rem; } }
   .row::after {
     content: "";
     display: table;
