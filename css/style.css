@@ -569,10 +569,13 @@ body {
 
 .form-radio-label {
   color: #777;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   cursor: pointer;
   padding-left: 5rem;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .form-radio-label {
+      font-size: 1.7rem; } }
 
 .form-radio-button {
   height: 3rem;
