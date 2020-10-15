@@ -1,3 +1,3 @@
 # Natours
 
-<img src="img/screen.png">
+<kbd><img src="img/screen.png"></kbd>
