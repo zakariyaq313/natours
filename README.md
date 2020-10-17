@@ -1,3 +1,3 @@
 # Natours
 
-<kbd><img src="img/screen.png"></kbd>
+<kbd><a href="https://zakariyaq313.github.io/natours/"><img src="img/screen.png"></a></kbd>
