@@ -1,0 +1,111 @@
+.header {
+	height: 95vh;
+	background-image: linear-gradient(to bottom right, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url("../img/hero.jpg");
+	background-size: cover;
+	background-position: top;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	position: relative;
+
+	@include respond(phone){
+		height: 90vh;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+	}
+
+	&-logo {
+		width: 8rem;
+		position: absolute;
+		top: 4rem;
+		left: 4rem;
+
+		@include respond(phone) {
+			top: 3rem;
+			left: 3rem;
+		}
+	}
+}
+
+.heading {
+	text-transform: uppercase;
+	color: $color-white;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	backface-visibility: hidden;
+	text-align: center;
+
+	&1 {
+		font-size: 6rem;
+		font-weight: 400;
+		letter-spacing: 3.5rem;
+		display: block;
+		animation: moveInRight 1s ease-out;
+
+		@include respond(phone) {
+			font-size: 5rem;
+			letter-spacing: 1rem;
+		}
+	}
+
+	&2 {
+		font-size: 2rem;
+		font-weight: 600;
+		letter-spacing: 1.75rem;
+		display: block;
+		animation: moveInLeft 1s ease-out;
+
+		@include respond(phone) {
+			letter-spacing: .5rem;
+		}
+	}
+}
+
+.section-about{
+  padding: 20rem 0;
+  margin-top: -20vh;
+  background-color: $color-gray-light;
+
+  @include respond(tab-port) {
+	  padding: 18rem 0 52rem;
+  }
+}
+
+.section-feature {
+	padding: 20rem 0;
+	background-image: linear-gradient(to bottom right, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url("../img/nat-4.jpg");
+	background-size: cover;
+	background-position: top;
+	position: relative;
+	transform: skewY(-7deg);
+	margin-top: -15rem;
+
+	& > * {
+		transform: skewY(7deg);
+	}
+
+	@include respond(tab-port) {
+		padding: 10rem 0;
+	}
+}
+
+.section-tours {
+	padding: 20rem 0 5rem;
+	background-size: cover;
+	margin-top: -13vh;
+	background-color: $color-gray-light;
+}
+
+.section-stories{
+	padding: 10rem 0 1px;
+	position: relative;
+}
+
+.section-booking{
+	padding: 15rem 0;
+	background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+	@include respond(phone) {
+		padding: 10rem 0;
+	}
+}

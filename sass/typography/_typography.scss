@@ -1,0 +1,18 @@
+.heading-secondary {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #7ed56f, #28b485);
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.heading-tertiary{
+  color: $color-gray;
+}
+
+.paragraph{
+  color: $color-gray;
+  font-size: 1.6rem;
+}
