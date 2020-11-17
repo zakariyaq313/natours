@@ -3,6 +3,12 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 8rem;
     padding: 2rem 14rem 0;
+    @include respond(tab-port){
+        grid-template-columns: none;
+        grid-template-rows: 2fr 1fr;
+        grid-row-gap: 6rem;
+        padding: 0 5rem;
+    }
 }
 
 .composition {

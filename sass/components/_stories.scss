@@ -16,9 +16,13 @@
     transform: skewX(-10deg);
 
     @include respond(tab-port) {
-        width: 100%;
-        padding: 4rem 6rem;
+        width: 80%;
         transform: skewX(0);
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 0;
+        justify-content: center;
+        align-items: center;
     }
 
     &-shape {
@@ -37,7 +41,7 @@
     &-text {
         display: grid;
         align-items: center;
-        align-content: center;
+        justify-content: center;
         padding: 0 4rem;
         transform: skewX(10deg);
         margin-top: 1rem;
@@ -47,7 +51,9 @@
         }
 
         @include respond(tab-port) {
+            text-align: center;
             transform: skewX(0);
+            margin-top: 3rem;
         }
     }
 

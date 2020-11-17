@@ -2,6 +2,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 5rem;
+    @include respond(tab-port){
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 5rem;
+    }
 }
 
 .card {
@@ -106,6 +111,9 @@
         color: $color-gray;
         padding: 3rem;
         margin-top: 2rem;
+        @include respond(phone) {
+    		margin-top: 0;
+    	}
 
         ul {
             list-style: none;
@@ -183,7 +191,7 @@
             padding: 4rem;
 
             .btn-card{
-                margin-top: 5rem;
+                margin-top: 2rem;
             }
         }
 
