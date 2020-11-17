@@ -1,3 +1,9 @@
+.feature{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 5rem;
+}
+
 .feature-box {
     color: $color-gray;
     background-color: rgba($color-gray-light, .8);

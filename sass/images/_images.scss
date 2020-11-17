@@ -1,3 +1,10 @@
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 8rem;
+    padding: 2rem 14rem 0;
+}
+
 .composition {
   position: relative;
 

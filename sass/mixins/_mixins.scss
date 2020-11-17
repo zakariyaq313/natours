@@ -1,11 +1,3 @@
-@mixin clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
 @mixin respond($breakpoint) {
     @if $breakpoint == mobile {
         @media (max-width: 21.875em) {
