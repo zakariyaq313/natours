@@ -1,3 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 21.875em) {
+  html {
+    font-size: 35%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding: 3rem;
+  color: #777;
+}
+@media (max-width: 56.25em) {
+  body {
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+}
+
 .heading-secondary {
   text-transform: uppercase;
   background: linear-gradient(to right, #7ed56f, #28b485);
@@ -294,54 +338,11 @@
   transform: rotate(-135deg);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-@media (max-width: 75em) {
-  html {
-    font-size: 56.25%;
-  }
-}
-@media (max-width: 56.25em) {
-  html {
-    font-size: 50%;
-  }
-}
-@media (max-width: 21.875em) {
-  html {
-    font-size: 35%;
-  }
-}
-@media (min-width: 112.5em) {
-  html {
-    font-size: 75%;
-  }
-}
-
-body {
-  font-family: Lato, sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  padding: 3rem;
-  color: #777;
-}
-@media (max-width: 56.25em) {
-  body {
-    padding: 0;
-    background-color: #f7f7f7;
-  }
-}
-
 .feature {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 5rem;
+  grid-column-gap: 3rem;
+  place-items: center;
 }
 @media (max-width: 56.25em) {
   .feature {
@@ -357,15 +358,20 @@ body {
   font-size: 1.5rem;
   text-align: center;
   border-radius: 1rem;
-  padding: 3rem 2rem 4rem;
+  padding: 10rem 2rem;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
   transition: all 0.3s;
+}
+@media (max-width: 37.5em) {
+  .feature-box {
+    padding: 5rem 2rem;
+  }
 }
 .feature-box:hover {
   transform: scale(1.05) translateY(-1rem);
 }
 .feature-box-h3 {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .feature-box-icon {
@@ -373,6 +379,7 @@ body {
   margin-bottom: 2rem;
   color: transparent;
   display: inline-block;
+  background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
 }
@@ -664,7 +671,7 @@ body {
 }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("../img/nat-10.jpg");
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url("../img/nat-10.jpg");
   background-size: cover;
 }
 @media (max-width: 56.25em) {
@@ -752,7 +759,7 @@ body {
   border: 5px solid #55c57a;
   border-radius: 50%;
   position: absolute;
-  top: -1rem;
+  top: -0.5rem;
   left: 0;
   display: inline-block;
 }
@@ -791,12 +798,37 @@ body {
     grid-template-columns: none;
     grid-template-rows: 2fr 1fr;
     grid-row-gap: 6rem;
-    padding: 0 5rem;
+    padding: 0 5rem 40rem;
+  }
+}
+@media (max-width: 700px) {
+  .about {
+    padding: 0 5rem 25rem;
+  }
+}
+@media (max-width: 530px) {
+  .about {
+    padding: 0 5rem 20rem;
+  }
+}
+@media (max-width: 450px) {
+  .about {
+    padding: 0 5rem 15rem;
+  }
+}
+@media (max-width: 400px) {
+  .about {
+    padding: 0 5rem 10rem;
   }
 }
 
 .composition {
   position: relative;
+}
+@media (max-width: 56.25em) {
+  .composition {
+    margin-top: 6rem;
+  }
 }
 .composition__photo {
   position: absolute;
@@ -898,6 +930,11 @@ body {
   margin-top: -20vh;
   background-color: #f7f7f7;
 }
+@media (max-width: 56.25em) {
+  .section-about {
+    padding: 25rem 0;
+  }
+}
 @media (max-width: 21.875em) {
   .section-about {
     padding: 25rem 0 30rem;
@@ -905,7 +942,7 @@ body {
 }
 
 .section-feature {
-  padding: 20rem 15rem;
+  padding: 20rem 5rem;
   background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
   background-size: cover;
   background-position: top;
@@ -1018,4 +1055,4 @@ body {
   padding-top: 2rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
